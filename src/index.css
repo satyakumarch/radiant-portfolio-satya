@@ -1,0 +1,106 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --radius: 1.2rem;
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+.glass-effect {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+.hover-scale {
+  @apply transition-transform duration-300 hover:-translate-y-1;
+}
+
+/* Animation for page sections */
+@layer components {
+  .section-animate {
+    @apply opacity-0 translate-y-10 transition-all duration-700;
+  }
+  
+  .section-animate.animate-in {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  /* Card hover lift effect */
+  .hover-lift {
+    @apply transition-all duration-300 hover:shadow-xl hover:shadow-accent/10 hover:-translate-y-2;
+  }
+  
+  /* Image hover effects */
+  .image-zoom-container {
+    @apply overflow-hidden;
+  }
+  
+  .image-zoom {
+    @apply transition-transform duration-700 ease-in-out hover:scale-110;
+  }
+  
+  /* Button hover glow effect */
+  .glow-on-hover {
+    @apply relative overflow-hidden;
+  }
+  
+  .glow-on-hover:after {
+    @apply content-[''] absolute w-full h-full top-0 left-0 bg-white/20 scale-0 rounded-full transition-all duration-500 ease-in-out;
+  }
+  
+  .glow-on-hover:hover:after {
+    @apply scale-150 opacity-0;
+  }
+}
+
+/* Modal animations */
+.modal-overlay {
+  @apply fixed inset-0 z-50 bg-black/80 animate-fade-in;
+}
+
+.modal-content {
+  @apply bg-background border border-white/10 rounded-lg overflow-hidden animate-scale-in;
+}
+
+/* Project card hover effect */
+.project-card {
+  @apply transition-all duration-500;
+}
+
+.project-card:hover {
+  @apply -translate-y-2 shadow-lg shadow-accent/20;
+}
+
+/* Project image wrapper */
+.project-image-wrapper {
+  @apply relative overflow-hidden;
+}
+
+/* Project image */
+.project-image {
+  @apply w-full transition-transform duration-500;
+}
+
+.project-image-wrapper:hover .project-image {
+  @apply scale-110;
+}
+
+/* Project overlay */
+.project-overlay {
+  @apply absolute inset-0 bg-accent/20 opacity-0 transition-opacity duration-300 
+         flex items-center justify-center;
+}
+
+.project-image-wrapper:hover .project-overlay {
+  @apply opacity-100;
+}
