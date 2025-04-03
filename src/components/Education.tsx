@@ -19,7 +19,7 @@ const Education = () => {
       College: "Shree janchetana  Secondary School",
       period: "2019 - 2021",
       description: "Completed my intermediate education with a focus on science subjects. Developed a strong analytical and problem-solving mindset.",
-      Skills: "HTML, CSS, JavaScript, Python, SQL, C++, Web Development, Data Structures, Algorithms"
+      Skills: "HTML, CSS, JavaScript, C++, Java, Networking, DBMS"
 
     },
     {
@@ -27,7 +27,7 @@ const Education = () => {
       College: "Shree janchetana  Secondary School",
       period: "2018 - 2019",
       description: "Completed my secondary education with a focus on science subjects. Developed a strong analytical and problem-solving mindset.",
-      Skills: "HTML, CSS, JavaScript, Python, SQL, C++, Web Development, Data Structures, Algorithms"
+      Skills: "HTML, CSS, JavaScript, C-Programming"
 
     },
 

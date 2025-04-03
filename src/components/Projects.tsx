@@ -10,6 +10,18 @@ const Projects = () => {
   
   const projects = [
     {
+    "title": "SjCSS",
+    "description": "This portfolio showcases my work and skills as a developer. It features a clean design, responsive layout, and interactive elements to enhance user experience.",
+    "tags": ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+    "image": "/sjcss.png",
+    "github":"https://github.com/satyakumarch/SJCSS",
+    "liveDemo": "https://sjcss.netlify.app/",
+    "demo": "/sjcss.png",
+    "stars": 100
+
+    },
+   
+    {
       title: "Electric Ease",
       description: "ElectricEase is a web-based project by satyakumarch, focusing on electricity-related services like bill tracking or consumption monitoring. Built with JavaScript, HTML, and CSS, it ensures a responsive and user-friendly interface. The project is actively developed but has no official releases yet..",
       tags: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
@@ -29,6 +41,7 @@ const Projects = () => {
       demo: "/hospital.png",
       stars: 32
     },
+    
     {
       title: "Foodie Food",
       description: "The Foodie Food website project is a vibrant and engaging front-end platform designed for food enthusiasts 🍽️. Built with HTML, CSS, JavaScript, and Bootstrap, it offers a visually appealing and responsive layout 🌟. Users can explore various recipes, view detailed.",
