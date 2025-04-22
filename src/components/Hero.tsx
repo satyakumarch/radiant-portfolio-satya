@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Twitter } from "lucide-react";
@@ -115,7 +114,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="relative animate-fade-in" style={{ animationDelay: "0.4s" }}>
+        <div className="relative animate-fade-in -mt-16" style={{ animationDelay: "0.4s" }}>
           <div className="relative z-10 rounded-full overflow-hidden border-4 border-accent/20 shadow-2xl w-80 h-80 mx-auto hover-scale">
             <img 
               src="/satya12.jpg"
