@@ -1,34 +1,32 @@
 
-import { Calendar, School } from "lucide-react";
+import { Award, Calendar } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { useEffect, useRef, useState } from "react";
 
-const Education = () => {
-  const educations = [
+const Certificates = () => {
+  // You can add your actual certificates here
+  const certificates = [
     {
-      title: "Bachelor of Computer Science and Engineering",
-      institution: "Lovely Professional University",
-      period: "2022 - Present",
-      description:
-        "Pursuing a Bachelor's degree with a focus on full-stack development, data structures, and algorithms. Gained a strong foundation in programming languages, web development, and software engineering principles.",
-      percentage: 60, // For demonstration: percent completed
-    },
-    {
-      title: "Intermediate in Science",
-      institution: "Shree Janchetana Secondary School",
-      period: "2019 - 2021",
-      description:
-        "Completed my intermediate education with a focus on science subjects. Developed a strong analytical and problem-solving mindset.",
+      title: "React Frontend Developer",
+      institution: "Coursera",
+      period: "Issued 2024",
+      description: "Certificate for successfully completing the React specialization courses, with hands-on projects and best practices.",
       percentage: 100,
     },
     {
-      title: "Matriculation",
-      institution: "Shree Janchetana Secondary School",
-      period: "2018 - 2019",
-      description:
-        "Completed my secondary education with a focus on science subjects. Developed a strong analytical and problem-solving mindset.",
+      title: "Python for Everybody",
+      institution: "Coursera",
+      period: "Issued 2023",
+      description: "Completed a comprehensive course on Python programming, algorithms, and data processing.",
       percentage: 100,
+    },
+    {
+      title: "Full Stack Web Development",
+      institution: "Udemy",
+      period: "Ongoing",
+      description: "Currently enrolled in a full-stack development bootcamp, learning modern web technologies and best practices.",
+      percentage: 70,
     },
   ];
 
@@ -49,25 +47,24 @@ const Education = () => {
 
   return (
     <div
-      className={`py-20 px-4 bg-background relative overflow-hidden`}
-      id="education"
+      className="py-20 px-4 bg-background relative overflow-hidden"
+      id="certificates"
       ref={sectionRef}
     >
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-5xl mx-auto relative z-10">
         <h2 className="text-4xl font-bold text-white text-center mb-4">
           <span className="inline-flex items-center gap-2">
-            <School className="w-7 h-7 text-accent" />
-            Education
+            <Award className="w-7 h-7 text-accent" />
+            Certificates
           </span>
         </h2>
         <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto">
-          My academic milestones and progress toward my degree
+          My certifications and ongoing achievements
         </p>
-
         <div className="relative flex flex-col space-y-8 ml-4">
           <div className="absolute left-0 top-2 bottom-0 w-0.5 bg-accent/20"></div>
-          {educations.map((edu, index) => (
+          {certificates.map((cert, index) => (
             <div
               key={index}
               className={`relative pl-8 transition-all duration-700 section-animate ${
@@ -79,31 +76,29 @@ const Education = () => {
               <Card className="p-6 glass-effect hover-lift">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                   <h3 className="text-xl font-semibold text-white">
-                    {edu.title}
+                    {cert.title}
                   </h3>
                   <div className="flex items-center text-white/60 text-sm mt-1 md:mt-0">
                     <Calendar className="w-4 h-4 mr-1" />
-                    {edu.period}
+                    {cert.period}
                   </div>
                 </div>
-
                 <div className="flex items-center mb-4 text-accent">
-                  <School className="w-4 h-4 mr-2" />
-                  <span>{edu.institution}</span>
+                  <Award className="w-4 h-4 mr-2" />
+                  <span>{cert.institution}</span>
                 </div>
-
-                <p className="text-white/70 mb-4">{edu.description}</p>
+                <p className="text-white/70 mb-4">{cert.description}</p>
                 {/* Progress indicator */}
                 <div className="mb-2">
                   <div className="flex justify-between items-center mb-1 text-xs">
                     <span className="text-white/80">
-                      Completion: {edu.percentage}%
+                      Completion: {cert.percentage}%
                     </span>
                   </div>
                   <div className="w-full h-3 bg-white/10 rounded-full overflow-hidden">
                     <div
-                      className="h-3 rounded-full bg-gradient-to-r from-accent to-secondary transition-all duration-700"
-                      style={{ width: `${edu.percentage}%` }}
+                      className="h-3 rounded-full bg-gradient-to-r from-accent to-primary transition-all duration-700"
+                      style={{ width: `${cert.percentage}%` }}
                     ></div>
                   </div>
                 </div>
@@ -117,4 +112,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Certificates;

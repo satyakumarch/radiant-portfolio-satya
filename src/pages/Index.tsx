@@ -7,7 +7,7 @@ import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Education from "@/components/Education";
-
+import Certificates from "@/components/Certificates";
 
 const Index = () => {
   return (
@@ -28,6 +28,9 @@ const Index = () => {
         </section>
         <section id="education">
           <Education/>
+        </section>
+        <section id="certificates">
+          <Certificates/>
         </section>
         <section id="contact">
           <Contact />
