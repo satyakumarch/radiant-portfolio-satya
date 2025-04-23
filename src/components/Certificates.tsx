@@ -1,32 +1,52 @@
 
 import CertificateCarousel from "./CertificateCarousel";
 
-// List of certificate data (ADD your real images at imageUrl if you wish)
-// You can use Unsplash or own certificate PNGs/PDF images; for now, placeholders
+// All certificate data with new uploaded images
 const certificates = [
   {
-    title: "React Frontend Developer",
-    institution: "Coursera",
-    period: "Issued 2024",
-    description: "Certificate for successfully completing the React specialization courses, with hands-on projects and best practices.",
+    title: "Internship in Web Development",
+    institution: "InternsElite",
+    period: "Dec 2023 - Feb 2024",
+    description:
+      "Internship certificate for completing a Web Development internship. Demonstrated dedication, hard work, and exceptional intelligence.",
     percentage: 100,
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/lovable-uploads/3a0d2c68-c068-4fd2-bb1f-805373b249f5.png",
   },
   {
-    title: "Python for Everybody",
-    institution: "Coursera",
-    period: "Issued 2023",
-    description: "Completed a comprehensive course on Python programming, algorithms, and data processing.",
+    title: "Full Stack: MERN Training",
+    institution: "CipherSchools",
+    period: "Mar 2025",
+    description:
+      "Certificate of completion for free training in Full-Stack using MERN. Gained practical skills in MERN stack development.",
     percentage: 100,
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/lovable-uploads/d8dc4ded-8634-4c60-89cb-a792c0aaec55.png",
   },
   {
-    title: "Full Stack Web Development",
+    title: "Mastering Data Structures & Algorithms",
     institution: "Udemy",
-    period: "Ongoing",
-    description: "Currently enrolled in a full-stack development bootcamp, learning modern web technologies and best practices.",
-    percentage: 70,
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80",
+    period: "Dec 2023",
+    description:
+      "Completed 'Mastering Data Structures & Algorithms using C and C++' by Abdul Bari. 58.5 hours of in-depth learning.",
+    percentage: 100,
+    imageUrl: "/lovable-uploads/82fbc8fc-c3c7-4a3e-8613-d61d62ad7b4d.png",
+  },
+  {
+    title: "NPTEL Cloud Computing",
+    institution: "IIT Kharagpur / NPTEL",
+    period: "Jul-Oct 2024",
+    description:
+      "Completed NPTEL 12 week course on Cloud Computing with 53% final score. Included graded assignments & proctored exam.",
+    percentage: 100,
+    imageUrl: "/lovable-uploads/e6025f56-8a86-4e4a-86ff-32dc87f7477e.png",
+  },
+  {
+    title: "DSA in C++",
+    institution: "Unstop",
+    period: "2024",
+    description:
+      "Successfully completed the course on DSA in Cpp, validating practical algorithm skills.",
+    percentage: 100,
+    imageUrl: "/lovable-uploads/805de55a-7eba-46db-ab2c-03d78b72a61f.png",
   },
 ];
 
@@ -48,3 +68,4 @@ const Certificates = () => {
 };
 
 export default Certificates;
+

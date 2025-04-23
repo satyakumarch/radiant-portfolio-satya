@@ -114,11 +114,11 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="relative animate-fade-in -mt-16" style={{ animationDelay: "0.4s" }}>
+        {/* Image - moved higher with larger negative margin top */}
+        <div className="relative animate-fade-in -mt-24" style={{ animationDelay: "0.4s" }}>
           <div className="relative z-10 rounded-full overflow-hidden border-4 border-accent/20 shadow-2xl w-80 h-80 mx-auto hover-scale">
-            <img 
+            <img
               src="/satya12.jpg"
-              
               className="w-full h-full object-cover transform transition-transform duration-800 hover:scale-110"
             />
           </div>
