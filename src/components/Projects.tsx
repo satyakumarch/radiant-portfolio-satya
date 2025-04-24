@@ -49,7 +49,7 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
-              project={project as ProjectType}
+              project={project as unknown as ProjectType}
               index={index}
               onShowDemo={showDemo}
               onVisitGithub={handleVisitGithub}
@@ -70,7 +70,7 @@ export const Projects = () => {
 
       {activeDemo !== null && (
         <ProjectModal
-          project={projects[activeDemo] as ProjectType}
+          project={projects[activeDemo] as unknown as ProjectType}
           onClose={closeDemo}
           onVisitGithub={handleVisitGithub}
           onVisitLiveDemo={handleVisitLiveDemo}

@@ -1,3 +1,4 @@
+
 export const projects = [
   {
     "title": "SjCSS",
@@ -63,13 +64,13 @@ export const projects = [
       stars: 67
     },
     {
-    title: "AC",
-    description: "The Foodie Food website project is a vibrant and engaging front-end platform designed for food enthusiasts 🍽️. Built with HTML, CSS, JavaScript, and Bootstrap, it offers a visually appealing and responsive layout 🌟. Users can explore various recipes, view detailed.",
-    tags: ["React", "Python", "Django", "OpenAI", "AWS"],
-    image: "/AC.png",
-    github: "https://github.com/satyakumarch/AC",
-    liveDemo: "https://smartac.netlify.app/",
-    demo: "/AC.png",
-    stars: 67
-  }
+      title: "AC",
+      description: "The Foodie Food website project is a vibrant and engaging front-end platform designed for food enthusiasts 🍽️. Built with HTML, CSS, JavaScript, and Bootstrap, it offers a visually appealing and responsive layout 🌟. Users can explore various recipes, view detailed.",
+      tags: ["React", "Python", "Django", "OpenAI", "AWS"],
+      image: "/AC.png",
+      github: "https://github.com/satyakumarch/AC",
+      liveDemo: "https://smartac.netlify.app/",
+      demo: "/AC.png",
+      stars: 67
+    }
 ] as const;
