@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,3 +95,59 @@
   @apply animate-pulse bg-accent/20;
 }
 
+/* Stagger Animation Classes */
+.stagger-animate > * {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.stagger-animate > *:nth-child(1) { animation: fadeInUp 0.6s 0.1s forwards; }
+.stagger-animate > *:nth-child(2) { animation: fadeInUp 0.6s 0.2s forwards; }
+.stagger-animate > *:nth-child(3) { animation: fadeInUp 0.6s 0.3s forwards; }
+.stagger-animate > *:nth-child(4) { animation: fadeInUp 0.6s 0.4s forwards; }
+.stagger-animate > *:nth-child(5) { animation: fadeInUp 0.6s 0.5s forwards; }
+.stagger-animate > *:nth-child(6) { animation: fadeInUp 0.6s 0.6s forwards; }
+
+/* Rotate Animation */
+.rotate-in {
+  @apply opacity-0 rotate-12;
+  animation: rotateIn 0.8s ease forwards;
+}
+
+@keyframes rotateIn {
+  to {
+    @apply opacity-100 rotate-0;
+  }
+}
+
+/* Bounce Animation */
+.bounce-in {
+  @apply opacity-0 scale-95;
+  animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+@keyframes bounceIn {
+  70% {
+    @apply opacity-100 scale-110;
+  }
+  100% {
+    @apply opacity-100 scale-100;
+  }
+}
+
+/* Floating Animation */
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

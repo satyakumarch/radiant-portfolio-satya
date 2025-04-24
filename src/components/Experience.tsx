@@ -1,4 +1,3 @@
-
 import { Briefcase, Calendar, ChevronRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -33,14 +32,14 @@ const Experience = () => {
     <div className="py-20 px-4 bg-background relative overflow-hidden" id="experience">
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-5xl mx-auto relative z-10">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">
+        <h2 className="text-4xl font-bold text-white text-center mb-4 bounce-in">
           Work Experience
         </h2>
-        <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto fade-in" style={{ animationDelay: "0.2s" }}>
           My professional journey building digital solutions
         </p>
         
-        <div className="relative flex flex-col space-y-8 ml-4">
+        <div className="relative flex flex-col space-y-8 ml-4 stagger-animate">
           {/* Timeline line */}
           <div className="absolute left-0 top-2 bottom-0 w-0.5 bg-accent/20"></div>
           

@@ -55,17 +55,17 @@ const Certificates = () => {
     <div className="py-20 px-4 bg-background relative overflow-hidden" id="certificates">
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-3xl mx-auto relative z-10">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">
+        <h2 className="text-4xl font-bold text-white text-center mb-4 bounce-in">
           Certificates
         </h2>
-        <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto fade-in" style={{ animationDelay: "0.2s" }}>
           My certifications and ongoing achievements
         </p>
-        <CertificateCarousel certificates={certificates} />
+        <div className="rotate-in" style={{ animationDelay: "0.4s" }}>
+          <CertificateCarousel certificates={certificates} />
+        </div>
       </div>
     </div>
   );
 };
-
-export default Certificates;
 

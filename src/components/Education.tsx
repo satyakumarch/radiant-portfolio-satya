@@ -26,15 +26,14 @@ const educations = [
 const Education = () => (
   <section id="education" className="relative py-20 px-4 bg-background overflow-hidden">
     {/* Glass effect background shapes */}
-    <div className="absolute left-0 top-1/3 w-60 h-60 bg-accent/10 blur-3xl rounded-full -z-10" />
-    <div className="absolute right-0 bottom-0 w-48 h-48 bg-accent/20 blur-2xl rounded-full -z-10" />
+    <div className="absolute left-0 top-1/3 w-60 h-60 bg-accent/10 blur-3xl rounded-full -z-10 floating"></div>
+    <div className="absolute right-0 bottom-0 w-48 h-48 bg-accent/20 blur-2xl rounded-full -z-10 floating" style={{ animationDelay: "2s" }}></div>
     <div className="max-w-3xl mx-auto relative z-10">
-      <h2 className="text-4xl font-bold text-center text-white mb-8 flex items-center justify-center gap-2">
+      <h2 className="text-4xl font-bold text-center text-white mb-8 flex items-center justify-center gap-2 bounce-in">
         <GraduationCap className="text-accent" size={36} />
         Education
       </h2>
-      {/* Timeline Style Education */}
-      <div className="relative pl-8 md:pl-20">
+      <div className="relative pl-8 md:pl-20 stagger-animate">
         <div className="absolute left-4 md:left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-accent/40 to-transparent rounded"></div>
         {educations.map((edu, idx) => (
           <div

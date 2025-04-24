@@ -39,14 +39,14 @@ const Skills = () => {
     <div className="py-20 px-4 bg-background relative overflow-hidden" id="skills">
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
-        <h2 className="text-4xl font-bold text-white text-center mb-4 fade-in">
+        <h2 className="text-4xl font-bold text-white text-center mb-4 bounce-in">
           Technical Skills
         </h2>
         <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto fade-in" style={{ animationDelay: "0.2s" }}>
           A diverse toolkit built over years of solving complex problems
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-animate">
           {skillCategories.map((category, index) => (
             <Card 
               key={index} 

@@ -66,26 +66,26 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 pt-20 bg-background relative overflow-hidden">
-      {/* Background elements with enhanced animations */}
-      <div className="absolute top-20 right-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]"></div>
-      <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]" style={{ animationDelay: "2s" }}></div>
+      {/* Enhanced background elements */}
+      <div className="absolute top-20 right-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl floating"></div>
+      <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl floating" style={{ animationDelay: "2s" }}></div>
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
-        <div className="space-y-8 slide-in-left" style={{ animationDelay: "0.2s" }}>
-          <div className="inline-block px-4 py-2 bg-accent/10 backdrop-blur-sm rounded-full text-accent mb-4">
+        <div className="space-y-8">
+          <div className="inline-block px-4 py-2 bg-accent/10 backdrop-blur-sm rounded-full text-accent mb-4 bounce-in">
             <span className="relative">
               {displayText}
               <span className="absolute right-[-8px] top-0 h-full w-0.5 bg-accent animate-pulse"></span>
             </span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight animate-scale-in" style={{ animationDelay: "0.2s" }}>
+          <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight slide-in-left" style={{ animationDelay: "0.3s" }}>
             Hello, I'm <span className="text-accent">Satya</span> Kumar
           </h1>
-          <p className="text-lg text-white/80 max-w-xl animate-scale-in" style={{ animationDelay: "0.4s" }}>
+          <p className="text-lg text-white/80 max-w-xl slide-in-left" style={{ animationDelay: "0.5s" }}>
             I build exceptional and accessible digital experiences for the web. Specialized in creating modern, responsive applications with cutting-edge technologies.
           </p>
           
-          <div className="flex flex-wrap gap-4 animate-scale-in" style={{ animationDelay: "0.6s" }}>
+          <div className="flex flex-wrap gap-4 slide-in-left" style={{ animationDelay: "0.7s" }}>
             <Button 
               className="px-6 py-6 text-lg bg-accent text-white hover:bg-accent/90 flex items-center gap-2 hover-scale"
               onClick={handleDownloadResume}
@@ -102,7 +102,7 @@ const Hero = () => {
             </Button>
           </div>
           
-          <div className="flex space-x-4 pt-4 animate-scale-in" style={{ animationDelay: "0.8s" }}>
+          <div className="flex space-x-4 pt-4 slide-in-left" style={{ animationDelay: "0.9s" }}>
             <a href="https://github.com/satyakumarch" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent/20 transition-colors hover-scale">
               <Github className="w-5 h-5 text-white" />
             </a>
@@ -115,8 +115,7 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* Image - adjusted position and enhanced animation */}
-        <div className="relative slide-in-right -mt-16" style={{ animationDelay: "0.4s" }}>
+        <div className="relative -mt-20 rotate-in" style={{ animationDelay: "0.6s" }}>
           <div className="relative z-10 rounded-full overflow-hidden border-4 border-accent/20 shadow-2xl w-80 h-80 mx-auto hover-scale">
             <img
               src="/satya12.jpg"
