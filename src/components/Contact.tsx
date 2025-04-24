@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -10,15 +9,15 @@ const Contact = () => {
   return (
     <div className="py-20 px-4 bg-background" id="contact">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">
+        <h2 className="text-4xl font-bold text-white text-center mb-4 fade-in">
           Get In Touch
         </h2>
-        <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto fade-in" style={{ animationDelay: "0.2s" }}>
           Interested in working together? Let's discuss your project
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 slide-in-left" style={{ animationDelay: "0.4s" }}>
             <Card className="p-6 glass-effect h-full">
               <h3 className="text-xl font-semibold text-white mb-6">Contact Information</h3>
               
@@ -86,7 +85,7 @@ const Contact = () => {
             </Card>
           </div>
           
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 slide-in-right" style={{ animationDelay: "0.4s" }}>
             <Card className="p-6 glass-effect">
               <h3 className="text-xl font-semibold text-white mb-6">Send Me a Message</h3>
               

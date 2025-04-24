@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Github, ExternalLink, Star, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -113,16 +112,20 @@ const Projects = () => {
   return (
     <div className="py-20 px-4 bg-background" id="projects">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">
+        <h2 className="text-4xl font-bold text-white text-center mb-4 fade-in">
           Featured Projects
         </h2>
-        <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto fade-in" style={{ animationDelay: "0.2s" }}>
           Showcase of my best work and technical capabilities
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover-lift glass-effect border-0 animate-fade-in" style={{ animationDelay: `${index * 200}ms` }}>
+            <Card 
+              key={index} 
+              className="overflow-hidden card-hover glass-effect border-0 fade-in-up" 
+              style={{ animationDelay: `${index * 0.1 + 0.4}s` }}
+            >
               <div className="h-48 overflow-hidden group">
                 <img 
                   src={project.image} 

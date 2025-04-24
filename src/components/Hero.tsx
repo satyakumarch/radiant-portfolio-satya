@@ -66,12 +66,12 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 pt-20 bg-background relative overflow-hidden">
-      {/* Background gradient elements with animations */}
-      <div className="absolute top-20 right-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
+      {/* Background elements with enhanced animations */}
+      <div className="absolute top-20 right-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]"></div>
+      <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]" style={{ animationDelay: "2s" }}></div>
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
-        <div className="space-y-8 animate-fade-in">
+        <div className="space-y-8 slide-in-left" style={{ animationDelay: "0.2s" }}>
           <div className="inline-block px-4 py-2 bg-accent/10 backdrop-blur-sm rounded-full text-accent mb-4">
             <span className="relative">
               {displayText}
@@ -114,12 +114,14 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        {/* Image - moved higher with larger negative margin top */}
-        <div className="relative animate-fade-in -mt-24" style={{ animationDelay: "0.4s" }}>
+        
+        {/* Image - adjusted position and enhanced animation */}
+        <div className="relative slide-in-right -mt-16" style={{ animationDelay: "0.4s" }}>
           <div className="relative z-10 rounded-full overflow-hidden border-4 border-accent/20 shadow-2xl w-80 h-80 mx-auto hover-scale">
             <img
               src="/satya12.jpg"
-              className="w-full h-full object-cover transform transition-transform duration-800 hover:scale-110"
+              alt="Profile"
+              className="w-full h-full object-cover transform transition-transform duration-700 hover:scale-110"
             />
           </div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10 animate-pulse"></div>

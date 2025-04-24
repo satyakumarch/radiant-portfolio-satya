@@ -1,4 +1,3 @@
-
 import { Code, Database, Terminal, Layout, Server, Globe, Braces, Sparkles } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -40,16 +39,20 @@ const Skills = () => {
     <div className="py-20 px-4 bg-background relative overflow-hidden" id="skills">
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">
+        <h2 className="text-4xl font-bold text-white text-center mb-4 fade-in">
           Technical Skills
         </h2>
-        <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto fade-in" style={{ animationDelay: "0.2s" }}>
           A diverse toolkit built over years of solving complex problems
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="p-6 hover-lift glass-effect">
+            <Card 
+              key={index} 
+              className="p-6 card-hover glass-effect fade-in-up"
+              style={{ animationDelay: `${index * 0.1 + 0.4}s` }}
+            >
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mr-4">
                   {category.icon}
